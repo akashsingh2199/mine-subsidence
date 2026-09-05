@@ -1,5 +1,4 @@
 import { Router } from 'express';
-import { getDatabaseStatus } from '../config/database.js';
 
 export function createHealthRouter(mlService) {
   const router = Router();
@@ -8,8 +7,7 @@ export function createHealthRouter(mlService) {
     response.json({
       status: 'ok',
       service: 'mine-subsidence-backend',
-      mlService: await mlService.health(),
-      database: getDatabaseStatus()
+      mlService: await mlService.health()
     });
   });
 

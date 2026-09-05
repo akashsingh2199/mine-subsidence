@@ -12,7 +12,6 @@
     "cors": "latest",
     "dotenv": "latest",
     "express": "latest",
-    "mongoose": "^9.9.5",
     "socket.io": "latest"
   },
   "devDependencies": {
