@@ -99,6 +99,6 @@ io.on('connection', async (socket) => {
   });
 });
 
-httpServer.listen(PORT, () => {
+httpServer.listen(PORT,"0.0.0.0" ,() => {
   console.log(`mine-subsidence-backend listening on http://localhost:${PORT}`);
 });
