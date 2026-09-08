@@ -15,7 +15,7 @@ export class MlService {
   constructor(baseUrl) {
     this.client = axios.create({
       baseURL: baseUrl,
-      timeout: 3000
+      timeout: 15000
     });
   }
 
